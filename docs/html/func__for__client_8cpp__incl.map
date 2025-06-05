@@ -1,0 +1,19 @@
+<map id="client/func_for_client.cpp" name="client/func_for_client.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="174,5,340,31"/>
+<area shape="rect" id="Node000002" href="$func__for__client_8h.html" title=" " alt="" coords="90,79,207,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="240,34,181,72,178,68,237,29"/>
+<area shape="rect" id="Node000005" href="$smart__home__client_8h.html" title=" " alt="" coords="295,79,437,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="277,29,336,68,333,73,274,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,71,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="131,107,71,146,68,142,128,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="95,153,202,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="151,105,151,137,146,137,146,105"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="226,153,295,178"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="350,107,293,146,290,141,347,103"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="320,153,412,178"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="369,105,369,137,363,137,363,105"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="436,153,533,178"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="387,103,453,142,450,147,385,107"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="557,153,676,178"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="409,103,560,145,559,151,408,108"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="SmartHomeClient::authSuccess" name="SmartHomeClient::authSuccess">
+<area shape="rect" id="Node000001" title=" " alt="" coords="358,47,567,72"/>
+<area shape="rect" id="Node000002" href="$class_smart_home_client.html#a6d849756dc1af0bb5471c7364f0c5463" title=" " alt="" coords="126,5,284,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="363,46,284,33,285,28,363,41"/>
+<area shape="rect" id="Node000004" href="$class_smarthome_window.html#a619da980fff8e3827bfea04d9879b2b7" title=" " alt="" coords="100,79,310,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="361,78,311,86,310,81,360,73"/>
+<area shape="rect" id="Node000003" href="$func__for__client_8cpp.html#a9b334bf03aa3e65ae1f6b12b326f392a" title=" " alt="" coords="5,5,52,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="110,21,52,21,52,16,110,16"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="233,66,223,60,205,58,188,60,178,64,175,70,176,78,171,79,169,69,175,60,187,55,205,53,224,55,236,61"/>
+</map>

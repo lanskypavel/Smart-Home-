@@ -1,0 +1,11 @@
+<map id="reg" name="reg">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,45,56"/>
+<area shape="rect" id="Node000002" href="$class_smart_home_client.html#af60a6a879d154610ccc10a9eb813e88c" title=" " alt="" coords="93,5,275,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,38,84,31,85,37,45,43"/>
+<area shape="rect" id="Node000003" href="$class_smart_home_client.html#a3fc737b23e6b865d7857270833f01069" title=" " alt="" coords="108,55,260,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="45,44,93,51,93,56,44,49"/>
+<area shape="rect" id="Node000004" href="$class_smart_home_client.html#a47f581bd88ffc6244ea80677667ab63b" title=" " alt="" coords="323,29,535,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="260,57,307,52,308,57,260,62"/>
+<area shape="rect" id="Node000005" href="$class_smart_home_client.html#a0573065fb8e0e8877c5796ec14fe9c94" title=" " alt="" coords="328,79,530,104"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="260,72,313,77,312,83,260,78"/>
+</map>

@@ -1,0 +1,63 @@
+\doxysection{clienthandler.\+h}
+\hypertarget{clienthandler_8h_source}{}\label{clienthandler_8h_source}\index{server/clienthandler.h@{server/clienthandler.h}}
+\mbox{\hyperlink{clienthandler_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CLIENTHANDLER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CLIENTHANDLER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QtCore/QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QtNetwork/QTcpSocket>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QtCore/QJsonDocument>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QtCore/QJsonObject>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QtCore/QDateTime>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QtCore/QString>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_client_handler_a92939232d27eb0a042d107da71439779}{ClientHandler}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_client_handler_a92939232d27eb0a042d107da71439779}{ClientHandler}}(qintptr\ socketDescriptor,\ QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ signals:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_client_handler_a0b032556d6130cae668e652283582eb1}{finished}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordtype}{void}\ readData();}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ disconnected();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ processRequest(\textcolor{keyword}{const}\ QJsonObject\ \&request);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{void}\ handleAuth(\textcolor{keyword}{const}\ QJsonObject\ \&request);}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{void}\ handleRegistration(\textcolor{keyword}{const}\ QJsonObject\ \&request);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ controlAC(\textcolor{keyword}{const}\ QJsonObject\ \&settings);}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ controlMusic(\textcolor{keyword}{const}\ QJsonObject\ \&settings);}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ controlLight(\textcolor{keyword}{const}\ QJsonObject\ \&settings);}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ controlKettle(\textcolor{keyword}{const}\ QJsonObject\ \&settings);}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ controlSocket(\textcolor{keyword}{const}\ QJsonObject\ \&settings);}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{void}\ controlCurtain(\textcolor{keyword}{const}\ QJsonObject\ \&settings);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{comment}{//\ Если\ нужен\ этот\ метод:}}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ controlLightAndKettle();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ sendResponse(\textcolor{keyword}{const}\ QJsonObject\ \&response);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_authenticated;}
+\DoxyCodeLine{00042\ \ \ \ \ QString\ m\_currentUser;}
+\DoxyCodeLine{00043\ \ \ \ \ QTcpSocket\ *m\_socket;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_lightOn\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_kettleOn\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_socketOn\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_curtainOpen\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_musicOn\ =\ \textcolor{keyword}{false};\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Добавлено:\ музыка\ включена/выключена}}
+\DoxyCodeLine{00050\ \ \ \ \ QString\ m\_musicTrack;\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Добавлено:\ текущий\ трек}}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_musicVolume\ =\ 0;}
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ getStatus();}
+\DoxyCodeLine{00053\ \ \ \ \ QString\ m\_acMode;\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ режим\ кондиционера\ (например,\ "{}cool"{},\ "{}heat"{},\ "{}off"{})}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ m\_acTemperature\ =\ 0;\ \ \textcolor{comment}{//\ установленная\ температура\ кондиционера}}
+\DoxyCodeLine{00055\ \};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CLIENTHANDLER\_H}}
+
+\end{DoxyCode}

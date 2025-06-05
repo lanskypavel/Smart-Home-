@@ -1,0 +1,21 @@
+<map id="Сервер нескольких клиентов/main.cpp" name="Сервер нескольких клиентов/main.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="217,5,359,46"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="158,94,282,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="273,48,242,84,238,80,269,45"/>
+<area shape="rect" id="Node000003" href="$mytcpserver_8h.html" title=" " alt="" coords="306,94,409,120"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="307,45,339,80,335,84,303,48"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,168,75,193"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="306,122,91,170,89,164,305,117"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="99,168,189,193"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="322,123,195,165,194,160,320,118"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="212,168,305,193"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="342,122,289,161,286,156,339,118"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="329,168,386,193"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="360,120,360,152,355,152,355,120"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="410,168,494,193"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="375,118,426,156,422,160,372,122"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="518,168,607,193"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="393,118,514,160,513,165,391,123"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="632,168,701,193"/>
+<area shape="poly" id="edge9_Node000003_Node000010" title=" " alt="" coords="410,117,617,164,616,170,409,122"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="MyTcpServer::slotServerRead" name="MyTcpServer::slotServerRead">
+<area shape="rect" id="Node000001" title=" " alt="" coords="502,5,697,31"/>
+<area shape="rect" id="Node000002" href="$class_my_tcp_server.html#a0ba7316ffe1a26c57fabde9e74b6c8dc" title=" " alt="" coords="235,5,454,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="486,21,455,21,455,16,486,16"/>
+<area shape="rect" id="Node000003" href="$class_my_tcp_server.html#acf367c4695b4d160c7a2d25c2afaaec4" title=" " alt="" coords="5,5,187,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="219,21,187,21,187,16,219,16"/>
+</map>

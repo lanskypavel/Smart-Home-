@@ -1,0 +1,13 @@
+<map id="client/smart_home_client.h" name="client/smart_home_client.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="406,5,584,31"/>
+<area shape="rect" id="Node000002" href="$func__for__client_8cpp.html" title=" " alt="" coords="5,79,172,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="411,37,158,81,158,76,410,32"/>
+<area shape="rect" id="Node000003" href="$managerforwindows_8cpp.html" title=" " alt="" coords="195,79,392,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="448,39,329,81,327,76,446,34"/>
+<area shape="rect" id="Node000004" href="$registerdialog_8cpp.html" title=" " alt="" coords="416,79,574,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="498,46,498,79,492,79,492,46"/>
+<area shape="rect" id="Node000005" href="$smart__home__client_8cpp.html" title=" " alt="" coords="598,79,790,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="544,34,661,76,659,81,542,39"/>
+<area shape="rect" id="Node000006" href="$smarthomewindow_8cpp.html" title=" " alt="" coords="813,79,1001,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="581,32,837,76,836,81,580,37"/>
+</map>

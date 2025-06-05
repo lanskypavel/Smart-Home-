@@ -1,0 +1,10 @@
+<map id="SmartHomeClient::regSuccess" name="SmartHomeClient::regSuccess">
+<area shape="rect" id="Node000001" title=" " alt="" coords="305,47,507,72"/>
+<area shape="rect" id="Node000002" href="$class_smart_home_client.html#a3fc737b23e6b865d7857270833f01069" title=" " alt="" coords="99,5,250,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="315,46,250,34,251,29,316,41"/>
+<area shape="rect" id="Node000004" href="$class_register_dialog.html#a58097230bc9a9a0a91c0704c79ff3823" title=" " alt="" coords="93,79,257,120"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="314,78,258,88,257,83,313,73"/>
+<area shape="rect" id="Node000003" href="$func__for__client_8cpp.html#a6824659f014905082b8fe9bc7d51f700" title=" " alt="" coords="5,5,45,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="83,21,45,21,45,16,83,16"/>
+<area shape="poly" id="edge4_Node000004_Node000004" title=" " alt="" coords="199,66,190,60,175,58,161,60,153,64,150,70,151,78,146,79,144,69,149,60,159,55,175,53,192,55,201,61"/>
+</map>

@@ -1,0 +1,82 @@
+\doxysection{Database\+Singleton Class Reference}
+\hypertarget{class_database_singleton}{}\label{class_database_singleton}\index{DatabaseSingleton@{DatabaseSingleton}}
+
+
+{\ttfamily \#include $<$Database\+Singleton.\+h$>$}
+
+
+
+Collaboration diagram for Database\+Singleton\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{class_database_singleton__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_database_singleton_a702e4226f9c4393cdffa27633d2bebc5}{initialize\+Database}} ()
+\item 
+bool \mbox{\hyperlink{class_database_singleton_a3e77d057f2d741de59e93395a40d54ed}{register\+User}} (const QString \&username, const QString \&password)
+\item 
+bool \mbox{\hyperlink{class_database_singleton_a11b6fe21b1579ad03a76bb0dce5877a7}{authenticate\+User}} (const QString \&username, const QString \&password)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \& \mbox{\hyperlink{class_database_singleton_ab9c2290e59f5944c206dbc0ae2c38fd3}{instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_database_singleton_a11b6fe21b1579ad03a76bb0dce5877a7}\index{DatabaseSingleton@{DatabaseSingleton}!authenticateUser@{authenticateUser}}
+\index{authenticateUser@{authenticateUser}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{authenticateUser()}{authenticateUser()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a11b6fe21b1579ad03a76bb0dce5877a7} 
+bool Database\+Singleton\+::authenticate\+User (\begin{DoxyParamCaption}\item[{const QString \&}]{username}{, }\item[{const QString \&}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_database_singleton_a702e4226f9c4393cdffa27633d2bebc5}\index{DatabaseSingleton@{DatabaseSingleton}!initializeDatabase@{initializeDatabase}}
+\index{initializeDatabase@{initializeDatabase}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{initializeDatabase()}{initializeDatabase()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a702e4226f9c4393cdffa27633d2bebc5} 
+bool Database\+Singleton\+::initialize\+Database (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_database_singleton_a702e4226f9c4393cdffa27633d2bebc5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_database_singleton_ab9c2290e59f5944c206dbc0ae2c38fd3}\index{DatabaseSingleton@{DatabaseSingleton}!instance@{instance}}
+\index{instance@{instance}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{instance()}{instance()}}
+{\footnotesize\ttfamily \label{class_database_singleton_ab9c2290e59f5944c206dbc0ae2c38fd3} 
+static \mbox{\hyperlink{class_database_singleton}{Database\+Singleton}} \& Database\+Singleton\+::instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_database_singleton_ab9c2290e59f5944c206dbc0ae2c38fd3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_database_singleton_ab9c2290e59f5944c206dbc0ae2c38fd3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_database_singleton_a3e77d057f2d741de59e93395a40d54ed}\index{DatabaseSingleton@{DatabaseSingleton}!registerUser@{registerUser}}
+\index{registerUser@{registerUser}!DatabaseSingleton@{DatabaseSingleton}}
+\doxysubsubsection{\texorpdfstring{registerUser()}{registerUser()}}
+{\footnotesize\ttfamily \label{class_database_singleton_a3e77d057f2d741de59e93395a40d54ed} 
+bool Database\+Singleton\+::register\+User (\begin{DoxyParamCaption}\item[{const QString \&}]{username}{, }\item[{const QString \&}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+server/\mbox{\hyperlink{_database_singleton_8h}{Database\+Singleton.\+h}}\end{DoxyCompactItemize}

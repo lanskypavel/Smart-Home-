@@ -1,0 +1,14 @@
+<map id="SmartHomeClient::errorOccurred" name="SmartHomeClient::errorOccurred">
+<area shape="rect" id="Node000001" title=" " alt="" coords="312,55,524,80"/>
+<area shape="rect" id="Node000002" href="$class_smart_home_client.html#a6d849756dc1af0bb5471c7364f0c5463" title=" " alt="" coords="103,5,261,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="338,54,246,34,247,29,339,48"/>
+<area shape="rect" id="Node000004" href="$class_smart_home_client.html#a3fc737b23e6b865d7857270833f01069" title=" " alt="" coords="106,55,258,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="296,70,258,70,258,65,296,65"/>
+<area shape="rect" id="Node000006" href="$class_register_dialog.html#a58097230bc9a9a0a91c0704c79ff3823" title=" " alt="" coords="100,128,264,169"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="365,88,244,130,242,125,363,83"/>
+<area shape="rect" id="Node000003" href="$func__for__client_8cpp.html#a9b334bf03aa3e65ae1f6b12b326f392a" title=" " alt="" coords="5,5,52,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,21,52,21,52,16,87,16"/>
+<area shape="rect" id="Node000005" href="$func__for__client_8cpp.html#a6824659f014905082b8fe9bc7d51f700" title=" " alt="" coords="9,55,48,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="91,70,48,70,48,65,91,65"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="206,115,197,109,182,107,168,109,159,114,156,120,157,127,152,128,151,119,155,110,166,104,182,102,199,104,209,111"/>
+</map>

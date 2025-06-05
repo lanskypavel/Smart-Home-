@@ -1,0 +1,15 @@
+<map id="client/smart_home_client.cpp" name="client/smart_home_client.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="172,5,364,31"/>
+<area shape="rect" id="Node000002" href="$smart__home__client_8h.html" title=" " alt="" coords="133,79,275,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="259,33,227,69,223,66,255,29"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="299,79,368,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="281,29,314,66,310,69,277,33"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,153,75,178"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="177,108,83,149,81,144,175,103"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="99,153,192,178"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="196,107,167,142,163,139,192,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="215,153,313,178"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="216,103,246,139,242,142,212,107"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="336,153,456,178"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="237,103,350,144,348,149,236,108"/>
+</map>

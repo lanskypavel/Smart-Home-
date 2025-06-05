@@ -1,0 +1,15 @@
+<map id="server/ui_mainwindow.h" name="server/ui_mainwindow.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="431,5,590,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,123,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="434,34,138,81,137,76,433,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="147,79,309,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="463,34,292,77,290,72,462,29"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="332,79,505,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="497,34,448,72,444,67,493,29"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="529,79,679,105"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="528,29,578,67,575,72,525,34"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="702,79,858,105"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="557,29,720,72,719,77,556,34"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="882,79,1020,105"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="586,29,867,74,866,80,585,34"/>
+</map>

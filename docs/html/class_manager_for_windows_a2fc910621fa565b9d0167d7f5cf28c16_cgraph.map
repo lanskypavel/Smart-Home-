@@ -1,0 +1,15 @@
+<map id="ManagerForWindows::ManagerForWindows" name="ManagerForWindows::ManagerForWindows">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,141,158,182"/>
+<area shape="rect" id="Node000002" href="$class_smarthome_window.html#afc6039afe9e90d9f03445b3c5439b27e" title=" " alt="" coords="220,5,390,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,139,146,97,204,55,214,50,217,55,207,60,149,101,104,143"/>
+<area shape="rect" id="Node000003" href="$class_register_dialog.html#af222471309df23c0d3c7a0cf05fc5db8" title=" " alt="" coords="228,70,382,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="124,138,205,104,226,98,228,103,207,110,126,143"/>
+<area shape="rect" id="Node000004" href="$class_smarthome_window.html#ad71dca8f2319d8050465cc965663ae07" title=" " alt="" coords="206,120,405,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="158,149,190,145,191,150,159,154"/>
+<area shape="rect" id="Node000005" href="$class_manager_for_windows.html#a27f42745ec3228db98fbd8062d061989" title=" " alt="" coords="229,169,382,210"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="159,169,214,176,213,181,158,174"/>
+<area shape="rect" id="Node000006" href="$class_manager_for_windows.html#a21ec18086cc7d6edd74fbf6152146f37" title=" " alt="" coords="229,235,382,275"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="123,180,207,219,225,227,223,231,205,224,121,185"/>
+<area shape="rect" id="Node000007" href="$class_manager_for_windows.html#a2278e1528ec3e72eccf4e97cf16b8e09" title=" " alt="" coords="229,300,382,341"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="100,181,145,232,174,260,207,285,218,291,215,295,204,289,171,265,141,236,96,184"/>
+</map>

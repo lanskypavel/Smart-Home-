@@ -1,0 +1,39 @@
+\doxysection{registerdialog.\+h}
+\hypertarget{registerdialog_8h_source}{}\label{registerdialog_8h_source}\index{client/registerdialog.h@{client/registerdialog.h}}
+\mbox{\hyperlink{registerdialog_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ REGISTERDIALOG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ REGISTERDIALOG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_ui}{Ui}}\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }RegisterDialog;}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_register_dialog_a58097230bc9a9a0a91c0704c79ff3823}{RegisterDialog}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_register_dialog_a58097230bc9a9a0a91c0704c79ff3823}{RegisterDialog}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{class_register_dialog_a3b53506497790b1e3b906fdedcd36344}{\string~RegisterDialog}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ signals:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_register_dialog_af222471309df23c0d3c7a0cf05fc5db8}{reg\_ok}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_registerButton\_clicked();}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_showPasswordCheckBox\_stateChanged(\textcolor{keywordtype}{int}\ state);}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ handleRegSuccess();}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ handleRegError(\textcolor{keyword}{const}\ QString\ \&message);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00028\ \ \ \ \ Ui::RegisterDialog\ *ui;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ isProcessing\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ showResult(\textcolor{keywordtype}{bool}\ success,\ \textcolor{keyword}{const}\ QString\ \&message);}
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ REGISTERDIALOG\_H}}
+
+\end{DoxyCode}
