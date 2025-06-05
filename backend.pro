@@ -7,7 +7,8 @@ CONFIG -= app_bundle
 SOURCES += \
     clienthandler.cpp \
     main.cpp \
-    tcp_server.cpp
+    tcp_server.cpp \
+    test_database_singleton.cpp
 
 HEADERS += \
     DatabaseSingleton.h \

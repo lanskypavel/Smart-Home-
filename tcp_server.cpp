@@ -1,21 +1,24 @@
 #include "tcp_server.h"
 #include "clienthandler.h"
+#include <QDebug>
 
 TcpServer::TcpServer(QObject *parent) : QTcpServer(parent)
 {
 }
 
-void TcpServer::startServer()
+bool TcpServer::startServer()
 {
-    if(!listen(QHostAddress::Any, 12345)) {
-        qDebug() << "Server could not start!";
+    if(!listen(QHostAddress("127.0.0.1"), 12345)) {
+        qDebug() << "Server could not start! Reason:" << errorString();
+        return false;
     } else {
         qDebug() << "Server started!";
+        return true;
     }
 }
 
 void TcpServer::incomingConnection(qintptr socketDescriptor)
 {
     ClientHandler *handler = new ClientHandler(socketDescriptor, this);
-    connect(handler, &ClientHandler::finished, handler, &ClientHandler::deleteLater);
+    connect(handler, &ClientHandler::finished, handler, &QObject::deleteLater);
 }

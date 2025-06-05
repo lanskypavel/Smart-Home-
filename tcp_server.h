@@ -9,7 +9,7 @@ class TcpServer : public QTcpServer
     Q_OBJECT
 public:
     explicit TcpServer(QObject *parent = nullptr);
-    void startServer();
+    bool startServer(); // изменено с void на bool
 
 protected:
     void incomingConnection(qintptr socketDescriptor) override;

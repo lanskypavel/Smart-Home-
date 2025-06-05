@@ -7,6 +7,8 @@
 #include <QSqlError>
 #include <QMutex>
 #include <QDebug>
+#include <QString>
+#include <QVariant>
 
 class DatabaseSingleton
 {
@@ -46,8 +48,8 @@ public:
         QMutexLocker locker(&m_mutex);
         QSqlQuery query;
         query.prepare("INSERT INTO users (username, password) VALUES (:user, :pass)");
-        query.bindValue(":user", username);
-        query.bindValue(":pass", password);
+        query.bindValue(":user", QVariant(username));  // Explicit QVariant conversion
+        query.bindValue(":pass", QVariant(password));  // Explicit QVariant conversion
         return query.exec();
     }
 
@@ -56,8 +58,8 @@ public:
         QMutexLocker locker(&m_mutex);
         QSqlQuery query;
         query.prepare("SELECT * FROM users WHERE username = :user AND password = :pass");
-        query.bindValue(":user", username);
-        query.bindValue(":pass", password);
+        query.bindValue(":user", QVariant(username));  // Explicit QVariant conversion
+        query.bindValue(":pass", QVariant(password));  // Explicit QVariant conversion
         return query.exec() && query.next();
     }
 
@@ -67,6 +69,7 @@ private:
     DatabaseSingleton(const DatabaseSingleton&) = delete;
     DatabaseSingleton& operator=(const DatabaseSingleton&) = delete;
     QMutex m_mutex;
+    void getStatus();
 };
 
 #endif // DATABASESINGLETON_H
