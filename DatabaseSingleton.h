@@ -21,15 +21,21 @@ public:
 
     bool initializeDatabase()
     {
-        QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-        db.setDatabaseName("smart_home.db");
+        QString connectionName = "main_connection";
+        QSqlDatabase db;
+        if (QSqlDatabase::contains(connectionName)) {
+            db = QSqlDatabase::database(connectionName);
+        } else {
+            db = QSqlDatabase::addDatabase("QSQLITE", connectionName);
+            db.setDatabaseName("smart_home.db");
+        }
 
         if(!db.open()) {
             qCritical() << "Cannot open database:" << db.lastError();
             return false;
         }
 
-        QSqlQuery query;
+        QSqlQuery query(db);
         QString createUsersTable =
             "CREATE TABLE IF NOT EXISTS users ("
             "id INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -43,23 +49,31 @@ public:
         return true;
     }
 
-    bool registerUser(const QString &username, const QString &password)
-    {
-        QMutexLocker locker(&m_mutex);
-        QSqlQuery query;
-        query.prepare("INSERT INTO users (username, password) VALUES (:user, :pass)");
-        query.bindValue(":user", QVariant(username));  // Explicit QVariant conversion
-        query.bindValue(":pass", QVariant(password));  // Explicit QVariant conversion
-        return query.exec();
+    bool registerUser(const QString& username, const QString& password) {
+        qDebug() << "=== MY DEBUG: registerUser called ===";
+        QSqlDatabase db = QSqlDatabase::database("main_connection");
+        QSqlQuery query(db);
+        query.prepare("INSERT INTO users (username, password) VALUES (?, ?)");
+        query.addBindValue(username);
+        query.addBindValue(password);
+        if (!query.exec()) {
+            qDebug() << "registerUser error:" << query.lastError().text();
+            qDebug() << "registerUser driver error:" << query.lastError().driverText();
+            qDebug() << "registerUser db error:" << query.lastError().databaseText();
+            return false;
+        }
+        qDebug() << "=== MY DEBUG: registerUser success ===";
+        return true;
     }
 
     bool authenticateUser(const QString &username, const QString &password)
     {
         QMutexLocker locker(&m_mutex);
-        QSqlQuery query;
+        QSqlDatabase db = QSqlDatabase::database("main_connection");
+        QSqlQuery query(db);
         query.prepare("SELECT * FROM users WHERE username = :user AND password = :pass");
-        query.bindValue(":user", QVariant(username));  // Explicit QVariant conversion
-        query.bindValue(":pass", QVariant(password));  // Explicit QVariant conversion
+        query.bindValue(":user", QVariant(username));
+        query.bindValue(":pass", QVariant(password));
         return query.exec() && query.next();
     }
 
