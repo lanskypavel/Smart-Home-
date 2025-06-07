@@ -1,9 +1,0 @@
-<map id="MyTcpServer::MyTcpServer" name="MyTcpServer::MyTcpServer">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,187,56"/>
-<area shape="rect" id="Node000002" href="$class_my_tcp_server.html#a0ba7316ffe1a26c57fabde9e74b6c8dc" title=" " alt="" coords="235,31,454,56"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,41,219,41,219,46,187,46"/>
-<area shape="rect" id="Node000003" href="$class_my_tcp_server.html#a3e040c49dbefd65b9a58ab662fc9f7a2" title=" " alt="" coords="502,5,742,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="454,31,486,28,487,33,455,36"/>
-<area shape="rect" id="Node000004" href="$class_my_tcp_server.html#ab4a64d2eab985d723090963f5c8a2882" title=" " alt="" coords="524,55,720,80"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="455,50,509,55,509,60,454,56"/>
-</map>

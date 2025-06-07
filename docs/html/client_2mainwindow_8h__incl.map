@@ -1,9 +1,0 @@
-<map id="client/mainwindow.h" name="client/mainwindow.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="120,5,258,31"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,112,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,34,95,74,92,69,166,29"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="136,79,243,105"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="192,31,192,63,186,63,186,31"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="267,79,370,105"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="212,29,284,69,282,73,210,34"/>
-</map>

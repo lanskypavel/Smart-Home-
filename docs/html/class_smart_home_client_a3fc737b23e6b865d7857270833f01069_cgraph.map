@@ -1,7 +1,0 @@
-<map id="SmartHomeClient::reg" name="SmartHomeClient::reg">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,157,56"/>
-<area shape="rect" id="Node000002" href="$class_smart_home_client.html#a47f581bd88ffc6244ea80677667ab63b" title=" " alt="" coords="205,5,417,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,33,189,29,189,34,157,38"/>
-<area shape="rect" id="Node000003" href="$class_smart_home_client.html#a0573065fb8e0e8877c5796ec14fe9c94" title=" " alt="" coords="210,55,412,80"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,49,195,53,194,58,156,54"/>
-</map>
