@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>812</width>
+    <height>744</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Панель управления умным домом</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+     <widget class="QGroupBox" name="groupStatus">
+      <property name="title">
+       <string>Текущее состояние и параметры</string>
+      </property>
+      <layout class="QGridLayout" name="statusGrid">
+       <item row="0" column="0">
+        <widget class="QLabel" name="labelCurrentTimeTitle">
+         <property name="text">
+          <string>Текущее время:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QTimeEdit" name="editCurrentTime"/>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="labelRoomTempTitle">
+         <property name="text">
+          <string>Температура в комнате:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QSpinBox" name="spinRoomTemp">
+         <property name="suffix">
+          <string>°C</string>
+         </property>
+         <property name="minimum">
+          <number>10</number>
+         </property>
+         <property name="maximum">
+          <number>40</number>
+         </property>
+         <property name="value">
+          <number>22</number>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="labelLightStatusName">
+         <property name="text">
+          <string>Свет:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="labelLightStatus2">
+         <property name="text">
+          <string>выключен</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="labelKettleStatusName">
+         <property name="text">
+          <string>Чайник:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="labelKettleStatus2">
+         <property name="text">
+          <string>выключен</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="labelACStatusName">
+         <property name="text">
+          <string>Кондиционер:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="labelACStatus2">
+         <property name="text">
+          <string>выключен</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="labelSocketStatusName">
+         <property name="text">
+          <string>Розетка:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="labelSocketStatus2">
+         <property name="text">
+          <string>выключена</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="labelCurtainStatusName">
+         <property name="text">
+          <string>Шторы:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="labelCurtainStatus2">
+         <property name="text">
+          <string>закрыты</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupLightKettle">
+      <property name="title">
+       <string>Свет и чайник (по времени)</string>
+      </property>
+      <layout class="QVBoxLayout" name="lightKettleVBox">
+       <item>
+        <layout class="QHBoxLayout" name="lightLayout">
+         <item>
+          <widget class="QLabel" name="labelLightTitle">
+           <property name="text">
+            <string>Свет:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelLightStatus2"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnLightToggle"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelLightOnTime">
+           <property name="text">
+            <string>Время вкл:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTimeEdit" name="timeLightOn"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelLightOffTime">
+           <property name="text">
+            <string>Время выкл:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTimeEdit" name="timeLightOff"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="kettleLayout">
+         <item>
+          <widget class="QLabel" name="labelKettleTitle">
+           <property name="text">
+            <string>Чайник:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelKettleStatus2"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnKettleOn"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelKettleTemp"/>
+         </item>
+         <item>
+          <widget class="QSlider" name="sliderKettleTemp"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelKettleOnTime">
+           <property name="text">
+            <string>Время вкл:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTimeEdit" name="timeKettleOn"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelKettleOffTime">
+           <property name="text">
+            <string>Время выкл:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTimeEdit" name="timeKettleOff"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupMusic">
+      <property name="title">
+       <string>Музыка</string>
+      </property>
+      <layout class="QHBoxLayout" name="musicLayout">
+       <item>
+        <widget class="QLabel" name="labelMusicStatus2">
+         <property name="text">
+          <string>выключена</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnMusicToggle">
+         <property name="text">
+          <string>Включить</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSlider" name="sliderMusicVolume">
+         <property name="minimum">
+          <number>0</number>
+         </property>
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelMusicVolume">
+         <property name="text">
+          <string>Громкость: 50%</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupAC">
+      <property name="title">
+       <string>Кондиционер</string>
+      </property>
+      <layout class="QVBoxLayout" name="acVBox">
+       <item>
+        <layout class="QHBoxLayout" name="acLayout">
+         <item>
+          <widget class="QLabel" name="labelACStatus2"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btnACOn"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboACMode">
+           <item>
+            <property name="text">
+             <string>Охлаждение</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Обогрев</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Авто</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelACTemp"/>
+         </item>
+         <item>
+          <widget class="QSlider" name="sliderACTemp"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="acTimeLayout">
+         <item>
+          <widget class="QLabel" name="labelACOnTime">
+           <property name="text">
+            <string>Время вкл:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTimeEdit" name="timeACStart"/>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelACOffTime">
+           <property name="text">
+            <string>Время выкл:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTimeEdit" name="timeACOff"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupSocket">
+      <property name="title">
+       <string>Умная розетка</string>
+      </property>
+      <layout class="QHBoxLayout" name="socketLayout">
+       <item>
+        <widget class="QLabel" name="labelSocketStatus2">
+         <property name="text">
+          <string>выключена</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSocketToggle">
+         <property name="text">
+          <string>Включить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupCurtain">
+      <property name="title">
+       <string>Шторы</string>
+      </property>
+      <layout class="QHBoxLayout" name="curtainLayout">
+       <item>
+        <widget class="QLabel" name="labelCurtainStatus2">
+         <property name="text">
+          <string>закрыты</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnCurtainOpen">
+         <property name="text">
+          <string>Открыть</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnCurtainClose">
+         <property name="text">
+          <string>Закрыть</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>812</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
